@@ -1,3 +1,3 @@
-COMMAND="/sbin/shutdown -r now"
-JOB="1 6 * * * $COMMAND"
-cat <(fgrep -i -v "$COMMAND" <(sudo crontab -l)) <(echo "$JOB") | sudo crontab -
+command="/sbin/shutdown -r now"
+job="1 6 * * * $command"
+cat <(fgrep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -

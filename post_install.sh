@@ -2,13 +2,6 @@
 
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
 
-# while installing:
-# disable update-notifier under "Startup Applications"
-# set autologin to 10 sec
-# set Grub timeout to 5 sec in two places
-# disable screen lock
-# disable screensaver
-
 apt-get remove libreoffice-* -y
 apt-get remove chromium-browser -y
 
