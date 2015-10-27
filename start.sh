@@ -6,7 +6,7 @@ source /home/ordrestyring/computestick-setup/stick.sh
 export DISPLAY=:0
 
 # google-chrome $STICK_CHROME_PARAMS --start-fullscreen --disable-session-crashed-bubble --disable-infobars --disable-translate $STICK_URL &
-firefox $STICK_URL $STICK_FIREFOX_PARAMS &
+firefox $STICK_URL $STICK_FIREFOX_PARAMS -silent -foreground &
 
 xdotool mousemove 1920 1080
 
